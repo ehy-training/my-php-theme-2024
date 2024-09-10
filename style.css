@@ -1,0 +1,21 @@
+/*
+Theme Name: My PHP Theme 2024
+Author: Enno Hyttrek
+Version: 1.0
+*/
+
+
+
+body {
+    background: hsl(200,21%,76%);
+    font-family: Arial, sans-serif;
+}
+
+
+.my-post-title {
+    color: red;
+}
+
+.wp-block-post-title {
+    color: green;
+}
