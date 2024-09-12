@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title><?php bloginfo('title'); ?></title>
-    <?php wp_head() ?>
-</head>
-
-<body>
-<p>Dies ist das Beitrags Template</p>
-    <h1><?php bloginfo('title'); ?></h1>
-
+<?php get_header(); ?>
+<div class="container">
+   <p class="template-flag">Dies ist das Beitragstemplate</p>
+   
+   
     <?php
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
@@ -22,9 +15,5 @@ if ( have_posts() ) :
     endwhile;
 endif;
 ?>
-
-
-    <?php wp_footer() ?>
-</body>
-
-</html>
+</div>
+<?php get_footer(); ?>

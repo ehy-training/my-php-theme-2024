@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.1
+Version: 1.2
 */
 
 
@@ -22,10 +22,11 @@ RESET
 LAYOUT
 ------------------*/
 
+.main-nav > div,
 .container {
-    max-width: 1000px;
-    margin: 00 auto;
-    padding: 1rem 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 16px;
 }
 
 main {
@@ -34,22 +35,59 @@ main {
 
 
 /*------------------
+NAVIGATION
+------------------*/
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-bar > div {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.nav-bar > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+}
+
+
+/*------------------
 COLOR & STYLE
 ------------------*/
+
+a:hover,
+a:active {
+    color: rgb(255,128,0);
+}
 
 body {
     background: hsl(200,21%,13%);
 }
 
 
-header a,
+.main-nav,
 header {
       background: hsl(200,21%,42%);
-        color: #fff;
+}
+
+.main-nav a,
+header a {
+    color: #fff;
 }
 
 main {
 background: #fff;
+}
+
+body.page-id-62 main {
+    background: red;
 }
 
 footer a,
@@ -68,4 +106,18 @@ TYPOGRAPHY
 
 body {
     font-family: Arial, sans-serif;
+}
+
+
+
+/*------------------
+RESPONSIVE (MOBILE FIRST)
+------------------*/
+
+
+
+@media only screen and (min-width: 580px) {
+    
+    
+    
 }
