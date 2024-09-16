@@ -1,19 +1,24 @@
 <?php get_header(); ?>
 <div class="container">
-   <p class="template-flag">Dies ist das Beitragstemplate</p>
-   
-   
-    <?php
+
+    <article class="my-post-content">
+        <?php
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
     ?>
 
-    <h2 class="my-post-title"><?php the_title(); ?></h2>
+        <h2 class="my-post-title"><?php the_title(); ?></h2>
 
-    <?php
+        <?php
         the_content();
     endwhile;
 endif;
 ?>
+    </article>
+    
+    <aside class="my-post-sidebar">
+        <?php dynamic_sidebar( 'side-bar' ); ?>
+    </aside>
+
 </div>
 <?php get_footer(); ?>

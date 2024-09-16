@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.2
+Version: 1.3
 */
 
 
@@ -116,8 +116,19 @@ RESPONSIVE (MOBILE FIRST)
 
 
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 960px) {
     
+    body.post-template-default main > .container {
+        display: flex;
+    }
     
+    body.post-template-default main > .container article {
+        width: 70%;
+    }
     
+        body.post-template-default main > .container aside {
+            width: 30%;
+            padding-left: 1rem;
+        
+    }
 }
