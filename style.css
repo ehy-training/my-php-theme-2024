@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.3
+Version: 1.4
 */
 
 
@@ -15,12 +15,27 @@ RESET
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 
 /*------------------
 LAYOUT
 ------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1em;
+}
 
 .main-nav > div,
 .container {
@@ -31,6 +46,10 @@ LAYOUT
 
 main {
     min-height: 70vh;
+}
+
+article {
+    margin-bottom: 1em;
 }
 
 
@@ -64,17 +83,17 @@ COLOR & STYLE
 
 a:hover,
 a:active {
-    color: rgb(255,128,0);
+    color: rgb(255, 128, 0);
 }
 
 body {
-    background: hsl(200,21%,13%);
+    background: hsl(200, 21%, 13%);
 }
 
 
 .main-nav,
 header {
-      background: hsl(200,21%,42%);
+    background: hsl(200, 21%, 42%);
 }
 
 .main-nav a,
@@ -83,7 +102,7 @@ header a {
 }
 
 main {
-background: #fff;
+    background: #fff;
 }
 
 body.page-id-62 main {
@@ -114,21 +133,47 @@ body {
 RESPONSIVE (MOBILE FIRST)
 ------------------*/
 
+@media only screen and (min-width: 580px) {
+
+    .container.my-blog-template {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .container.my-blog-template article {
+        width: 50%;
+        padding: 8px;
+    }
+
+}
+
 
 
 @media only screen and (min-width: 960px) {
-    
+
     body.post-template-default main > .container {
         display: flex;
     }
-    
+
     body.post-template-default main > .container article {
         width: 70%;
     }
+
+    body.post-template-default main > .container aside {
+        width: 30%;
+        padding-left: 1rem;
+
+    }
     
-        body.post-template-default main > .container aside {
-            width: 30%;
-            padding-left: 1rem;
-        
+        .container.my-blog-template article {
+        width: 33.33%;
     }
 }
+
+
+
+
+
+
+
+
