@@ -23,7 +23,7 @@ function register_my_menus() {
 //Register Widgets
 function register_my_widgets() {
     
-            register_sidebar( array(
+        register_sidebar( array(
 		'name'          => 'Header Widgets',
 		'id'            => 'header-widgets',
 		'before_widget' => '<div>',

@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.4
+Version: 1.5
 */
 
 
@@ -133,23 +133,32 @@ body {
 RESPONSIVE (MOBILE FIRST)
 ------------------*/
 
-@media only screen and (min-width: 580px) {
+/*Boostrap sm breakpoint*/
+@media only screen and (min-width: 576px) {
 
+    .footer-sidebar,
     .container.my-blog-template {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1em;
     }
     
+    .footer-sidebar > div,
     .container.my-blog-template article {
         width: 50%;
         padding: 8px;
+    }
+    
+    .footer-sidebar > div {
+        width: 25%;
+        border: 1px solid #fff;
     }
 
 }
 
 
-
-@media only screen and (min-width: 960px) {
+/*Boostrap lg breakpoint*/
+@media only screen and (min-width: 992px) {
 
     body.post-template-default main > .container {
         display: flex;
