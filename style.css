@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.5
+Version: 1.6
 */
 
 
@@ -114,6 +114,11 @@ footer {
     color: #fff;
 }
 
+    .footer-sidebar > div {
+        border: 1px solid hsla(200,0%,76%,0.5);
+        border-radius: 16px;
+    }
+
 
 
 
@@ -124,7 +129,17 @@ TYPOGRAPHY
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
 }
 
 
@@ -143,6 +158,10 @@ RESPONSIVE (MOBILE FIRST)
         margin-bottom: 1em;
     }
     
+    .footer-sidebar {
+        grid-gap: 8px;
+    }
+    
     .footer-sidebar > div,
     .container.my-blog-template article {
         width: 50%;
@@ -150,8 +169,7 @@ RESPONSIVE (MOBILE FIRST)
     }
     
     .footer-sidebar > div {
-        width: 25%;
-        border: 1px solid #fff;
+        width: 49.2%;
     }
 
 }
@@ -176,6 +194,10 @@ RESPONSIVE (MOBILE FIRST)
     
         .container.my-blog-template article {
         width: 33.33%;
+    }
+    
+        .footer-sidebar > div {
+        width: 24%;
     }
 }
 
