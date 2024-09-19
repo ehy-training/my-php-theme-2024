@@ -41,8 +41,6 @@ function register_my_widgets() {
         register_sidebar( array(
 		'name'          => 'Side Bar',
 		'id'            => 'side-bar',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
 	) );
 
 

@@ -15,7 +15,7 @@ if ( have_posts() ) :
 endif;
 ?>
     </article>
-    
+
     <aside class="my-post-sidebar">
         <?php dynamic_sidebar( 'side-bar' ); ?>
     </aside>

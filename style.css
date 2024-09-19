@@ -1,7 +1,7 @@
 /*
 Theme Name: My PHP Theme 2024
 Author: Enno Hyttrek
-Version: 1.6
+Version: 1.7
 */
 
 
@@ -114,10 +114,10 @@ footer {
     color: #fff;
 }
 
-    .footer-sidebar > div {
-        border: 1px solid hsla(200,0%,76%,0.5);
-        border-radius: 16px;
-    }
+.footer-sidebar > div {
+    border: 1px solid hsla(200, 0%, 76%, 0.5);
+    border-radius: 16px;
+}
 
 
 
@@ -138,7 +138,12 @@ footer {
     font-size: 0.8em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -157,26 +162,26 @@ RESPONSIVE (MOBILE FIRST)
         flex-wrap: wrap;
         margin-bottom: 1em;
     }
-    
+
     .footer-sidebar {
         grid-gap: 8px;
     }
-    
+
     .footer-sidebar > div,
     .container.my-blog-template article {
         width: 50%;
         padding: 8px;
     }
-    
+
     .footer-sidebar > div {
         width: 49.2%;
     }
 
 }
 
+/*Boostrap md breakpoint*/
+@media only screen and (min-width: 768px) {
 
-/*Boostrap lg breakpoint*/
-@media only screen and (min-width: 992px) {
 
     body.post-template-default main > .container {
         display: flex;
@@ -189,22 +194,22 @@ RESPONSIVE (MOBILE FIRST)
     body.post-template-default main > .container aside {
         width: 30%;
         padding-left: 1rem;
+    }
 
-    }
-    
-        .container.my-blog-template article {
-        width: 33.33%;
-    }
-    
-        .footer-sidebar > div {
-        width: 24%;
-    }
 }
 
 
 
+/*Boostrap lg breakpoint*/
+@media only screen and (min-width: 992px) {
 
 
 
+    .container.my-blog-template article {
+        width: 33.33%;
+    }
 
-
+    .footer-sidebar > div {
+        width: 24%;
+    }
+}
